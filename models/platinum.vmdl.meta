@@ -1,0 +1,25 @@
+{
+  "publish": {
+    "Enabled": true,
+    "ProjectConfig": {
+      "Title": "Arknights Platinum",
+      "Type": "model",
+      "Org": "ibrs",
+      "Ident": "ark_platinum",
+      "Tags": "",
+      "Schema": 0,
+      "HasAssets": false,
+      "AssetsPath": null,
+      "ResourcePaths": null,
+      "HasCode": false,
+      "CodePath": null,
+      "Metadata": {
+        "SingleAssetSource": "models/platinum.vmdl",
+        "Summary": "Platinum from Arknights.",
+        "Description": "Platinum from Arknights.",
+        "Public": true,
+        "ReplaceTags": "arknights anime"
+      }
+    }
+  }
+}
