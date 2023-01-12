@@ -330,95 +330,102 @@
 						]
 					},
 					{
-						_class = "PhysicsJointConical"
-						parent_body = "bip01_pelvis"
-						child_body = "tail_1"
-						anchor_origin = [ 0.0, 4.0, -3.0 ]
-						anchor_angles = [ 0.0, 0.0, -180.0 ]
-						collision_enabled = false
-						friction = 1.0
-						enable_swing_limit = true
-						swing_limit = 15.0
-						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
-						enable_twist_limit = true
-						min_twist_angle = -5.0
-						max_twist_angle = 5.0
-					},
-					{
-						_class = "PhysicsJointConical"
-						disabled = true
-						parent_body = "tail_0"
-						child_body = "tail_1"
-						anchor_origin = [ 0.0, 25.0, 0.0 ]
-						anchor_angles = [ -15.0, 0.0, 0.0 ]
-						collision_enabled = false
-						friction = 1.0
-						enable_swing_limit = true
-						swing_limit = 15.0
-						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
-						enable_twist_limit = true
-						min_twist_angle = 0.0
-						max_twist_angle = 0.0
-					},
-					{
-						_class = "PhysicsJointConical"
-						parent_body = "tail_1"
-						child_body = "tail_2"
-						anchor_origin = [ 0.0, 0.0, 4.0 ]
-						anchor_angles = [ 0.0, 0.0, 0.0 ]
-						collision_enabled = true
-						friction = 0.25
-						enable_swing_limit = true
-						swing_limit = 10.0
-						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
-						enable_twist_limit = true
-						min_twist_angle = -5.0
-						max_twist_angle = 5.0
-					},
-					{
-						_class = "PhysicsJointConical"
-						parent_body = "tail_2"
-						child_body = "tail_3"
-						anchor_origin = [ 0.0, 0.0, 4.0 ]
-						anchor_angles = [ 0.0, 0.0, 0.0 ]
-						collision_enabled = true
-						friction = 0.25
-						enable_swing_limit = true
-						swing_limit = 10.0
-						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
-						enable_twist_limit = true
-						min_twist_angle = -5.0
-						max_twist_angle = 5.0
-					},
-					{
-						_class = "PhysicsJointConical"
-						parent_body = "tail_3"
-						child_body = "tail_4"
-						anchor_origin = [ 0.0, 0.0, 3.0 ]
-						anchor_angles = [ 0.0, 0.0, 0.0 ]
-						collision_enabled = true
-						friction = 0.25
-						enable_swing_limit = true
-						swing_limit = 10.0
-						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
-						enable_twist_limit = true
-						min_twist_angle = -5.0
-						max_twist_angle = 5.0
-					},
-					{
-						_class = "PhysicsJointConical"
-						parent_body = "tail_4"
-						child_body = "tail_5"
-						anchor_origin = [ 0.0, 0.0, 2.5 ]
-						anchor_angles = [ 0.0, 0.0, 0.0 ]
-						collision_enabled = true
-						friction = 0.25
-						enable_swing_limit = true
-						swing_limit = 10.0
-						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
-						enable_twist_limit = true
-						min_twist_angle = -5.0
-						max_twist_angle = 5.0
+						_class = "Folder"
+						name = "Tail"
+						children = 
+						[
+							{
+								_class = "PhysicsJointConical"
+								parent_body = "bip01_pelvis"
+								child_body = "tail_1"
+								anchor_origin = [ 0.0, 4.0, -3.0 ]
+								anchor_angles = [ 0.0, 90.0, -180.0 ]
+								collision_enabled = false
+								friction = 1.0
+								enable_swing_limit = true
+								swing_limit = 15.0
+								swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+								enable_twist_limit = true
+								min_twist_angle = -5.0
+								max_twist_angle = 5.0
+							},
+							{
+								_class = "PhysicsJointConical"
+								disabled = true
+								parent_body = "tail_0"
+								child_body = "tail_1"
+								anchor_origin = [ 0.0, 0.0, 0.0 ]
+								anchor_angles = [ -15.0, 0.0, 0.0 ]
+								collision_enabled = false
+								friction = 1.0
+								enable_swing_limit = true
+								swing_limit = 15.0
+								swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+								enable_twist_limit = true
+								min_twist_angle = 0.0
+								max_twist_angle = 0.0
+							},
+							{
+								_class = "PhysicsJointConical"
+								parent_body = "tail_1"
+								child_body = "tail_2"
+								anchor_origin = [ 0.0, 0.0, 4.0 ]
+								anchor_angles = [ 0.0, 0.0, 0.0 ]
+								collision_enabled = true
+								friction = 0.25
+								enable_swing_limit = true
+								swing_limit = 10.0
+								swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+								enable_twist_limit = true
+								min_twist_angle = -5.0
+								max_twist_angle = 5.0
+							},
+							{
+								_class = "PhysicsJointConical"
+								parent_body = "tail_2"
+								child_body = "tail_3"
+								anchor_origin = [ 0.0, 0.0, 4.0 ]
+								anchor_angles = [ 0.0, 0.0, 0.0 ]
+								collision_enabled = true
+								friction = 0.25
+								enable_swing_limit = true
+								swing_limit = 10.0
+								swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+								enable_twist_limit = true
+								min_twist_angle = -5.0
+								max_twist_angle = 5.0
+							},
+							{
+								_class = "PhysicsJointConical"
+								parent_body = "tail_3"
+								child_body = "tail_4"
+								anchor_origin = [ 0.0, 0.0, 3.0 ]
+								anchor_angles = [ 0.0, 0.0, 0.0 ]
+								collision_enabled = true
+								friction = 0.25
+								enable_swing_limit = true
+								swing_limit = 10.0
+								swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+								enable_twist_limit = true
+								min_twist_angle = -5.0
+								max_twist_angle = 5.0
+							},
+							{
+								_class = "PhysicsJointConical"
+								parent_body = "tail_4"
+								child_body = "tail_5"
+								anchor_origin = [ 0.0, 0.0, 2.5 ]
+								anchor_angles = [ 0.0, 0.0, 0.0 ]
+								collision_enabled = true
+								friction = 0.25
+								enable_swing_limit = true
+								swing_limit = 10.0
+								swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+								enable_twist_limit = true
+								min_twist_angle = -5.0
+								max_twist_angle = 5.0
+							},
+						]
 					},
 				]
 			},
