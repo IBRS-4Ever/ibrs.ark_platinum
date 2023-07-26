@@ -7,6 +7,9 @@ Layer0
 	//---- MToon Outline (WIP) ----
 	F_OUTLINE_WIDTH_MODE 1 // WorldCoordinates
 
+	//---- Rendering ----
+	F_RENDER_BACKFACES 1
+
 	//---- Color ----
 	g_flModelTintAmount "1.000"
 	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
